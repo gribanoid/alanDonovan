@@ -1,4 +1,4 @@
-package main
+package gifs
 
 import (
 	"image"
@@ -8,7 +8,6 @@ import (
 	"io"
 	"math"
 	"math/rand"
-	"os"
 	"time"
 )
 
@@ -19,10 +18,7 @@ const (
 	blackIndex = 1
 )
 
-func main() {
-	lissajous(os.Stdout)
-}
-func lissajous(out io.Writer) {
+func Lissajous(out io.Writer) {
 	const (
 		cycles  = 5
 		res     = 0.001
